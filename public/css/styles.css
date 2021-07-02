@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.clock {
+    width: 400px;
+    height: 400px;
+    background: pink;
+    border-radius: 50%;
+    position: relative;
+}
+.hand {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hand-sec::after {
+    content: '';
+    background: #000;
+    width: 2px;
+    position: absolute;
+    top: 0;
+    bottom: 40%;
+    left: calc(50% - 1px);
+}
+.hand-min::after {
+    content: '';
+    background: #000;
+    width: 6px;
+    position: absolute;
+    top: 10%;
+    bottom: 40%;
+    left: calc(50% - 3px);
+}
+.hand-hour::after {
+    content: '';
+    background: #000;
+    width: 10px;
+    position: absolute;
+    top: 20%;
+    bottom: 40%;
+    left: calc(50% - 5px);
+}
